@@ -1,7 +1,7 @@
 FROM tensorflow/tensorflow:2.4.0-gpu
 
 RUN apt-get update
-
+RUN mkdir /var/run/sshd
 RUN apt-get install -y openssh-server vim
 
 RUN echo 'root:root' |chpasswd

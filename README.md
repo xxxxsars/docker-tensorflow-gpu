@@ -74,5 +74,5 @@ $ docker build -t tf_ssh:2.4.0-gpu
 run this container
 
 ```
-$ docker run -p 8022:22 -p 6006:6006 tf_ssh:2.4.0-gpu
+$ docker run -d -p 8022:22 -p 6006:6006 tf_ssh:2.4.0-gpu
 ```
